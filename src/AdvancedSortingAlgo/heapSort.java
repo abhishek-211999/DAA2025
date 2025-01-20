@@ -1,4 +1,4 @@
-package Sorting;
+package AdvancedSortingAlgo;
 public class heapSort {
 
     public static void heapSort(int[] arr) {
