@@ -1,27 +1,29 @@
-package BasicSorting;
+package Btech_Lab.Section_O;
 
-public class insertionSort {
+public class InsertionSort {
+
     public static void insertionSort(int[] arr) {
         int n = arr.length;
 
         for (int i = 1; i < n; i++) {
-            int key = arr[i];
+            int curr = arr[i];
             int j = i - 1;
 
-            while (j >= 0 && arr[j] > key) {
+            while (j >= 0 && arr[j] > curr) {
                 arr[j + 1] = arr[j];
                 j--;
             }
-            arr[j + 1] = key;
+            arr[j + 1] = curr;
         }
     }
 
     public static void main(String[] args) {
-        int[] arr = {12, 11, 13, 5, 6};
+        int[] arr = {2,7,5,3,9,1,6};
         insertionSort(arr);
 
         for (int value : arr) {
             System.out.print(value + " ");
         }
     }
+
 }
